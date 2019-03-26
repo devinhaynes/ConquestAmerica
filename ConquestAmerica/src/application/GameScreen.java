@@ -28,7 +28,7 @@ public class GameScreen extends Application {
 	public void start(Stage primaryStage) throws FileNotFoundException, IOException {
 		//Column Constraints
 			ColumnConstraints TopCons = new ColumnConstraints();
-			TopCons.setPercentWidth(100/3);
+			TopCons.setPercentWidth(100/2);
 			TopCons.setHalignment(HPos.CENTER);
 			
 			ColumnConstraints BotCons = new ColumnConstraints();
@@ -214,35 +214,39 @@ public class GameScreen extends Application {
 	        iowaPath.setContent(iowa);
 	        minnesotaPath.setContent(minnesota);
 	        ohioPath.setContent(ohio);
-	        wisconsinPath.setContent(wisconsin);	     
+	        wisconsinPath.setContent(wisconsin);	
 	        
+	        SVGPath virginiaGroup = new SVGPath();
+	        String virginia = virginiaPathOne.getContent().replace("z", "M") + virginiaPathTwo.getContent().replaceFirst("m", "");
+	        virginiaGroup.setContent(virginia);
 	        
-	        	        //Groups dont work at the moment. We need to find a way to properly concatenate the multiple paths
-	        
-	      //Creating a Group object  
-	        String michigan = michiganPathOne.getContent().toLowerCase().replace("z", "") + michiganPathTwo.getContent().toLowerCase();
+	        String michigan = michiganPathOne.getContent().replace("z", "M") + michiganPathTwo.getContent().replaceFirst("m", "");
 	        SVGPath michiganGroup = new SVGPath();
 	        michiganGroup.setContent(michigan);
 	        
-	        String virginia = virginiaPathOne.getContent() + virginiaPathTwo.getContent();
-	        SVGPath virginiaGroup = new SVGPath();
-	        virginiaGroup.setContent(virginia);
-	        
-	        String hawaii = hawaiiPathOne.getContent() + hawaiiPathTwo.getContent() + hawaiiPathThree.getContent() + hawaiiPathFour.getContent() + hawaiiPathFive.getContent() + hawaiiPathSix.getContent() + hawaiiPathSeven.getContent();
+	        String hawaii = hawaiiPathOne.getContent().replace("z", "M") + hawaiiPathTwo.getContent().replaceFirst("m", "").replace("z", "M") 
+	        		+ hawaiiPathFour.getContent().replaceFirst("m", "").replace("z", "M")
+	        		+ hawaiiPathFive.getContent().replaceFirst("m", "").replace("z", "M") + hawaiiPathSix.getContent().replaceFirst("m", "").replace("z", "M")
+	        		+ hawaiiPathSeven.getContent().replaceFirst("m", "");
 	        SVGPath hawaiiGroup = new SVGPath();
 	        hawaiiGroup.setContent(hawaii);
 	        
-	        String alaska = alaskaPathOne.getContent() + alaskaPathTwo.getContent() + alaskaPathThree.getContent() + alaskaPathFour.getContent() + alaskaPathFive.getContent() + alaskaPathSix.getContent() + alaskaPathSeven.getContent() + alaskaPathEight.getContent() + alaskaPathNine.getContent() + alaskaPathTen.getContent();
+	        String alaska = alaskaPathOne.getContent().replace("z", "M") + alaskaPathTwo.getContent().replaceFirst("m", "").replace("z", "M")
+	        		+ alaskaPathThree.getContent().replaceFirst("m", "").replace("z", "M") + alaskaPathFour.getContent().replaceFirst("m", "").replace("z", "M")
+	        		+ alaskaPathFive.getContent().replaceFirst("m", "").replace("z", "M") + alaskaPathSix.getContent().replaceFirst("m", "").replace("z", "M")
+	        		+ alaskaPathSeven.getContent().replaceFirst("m", "").replace("z", "M") + alaskaPathEight.getContent().replaceFirst("m", "").replace("z", "M")
+	        		+ alaskaPathNine.getContent().replaceFirst("m", "").replace("z", "M") + alaskaPathTen.getContent().replaceFirst("m", "");
 	        SVGPath alaskaGroup = new SVGPath();
 	        alaskaGroup.setContent(alaska);
 	        
+	        
+
 	        SVGPath[] allStates = {washingtonPath, oregonPath, newMexicoPath, nevadaPath, montanaPath, southDakotaPath, utahPath, oklahomaPath, 
 	        		nebraskaPath, iowaPath, missouriPath, mississippiPath, tennesseePath, wisconsinPath, ohioPath, georgiaPath, southCarolinaPath, 
-	        		virginiaGroup, virginiaPathOne, virginiaPathTwo, westVirginiaPath, delawarePath, pennsylvaniaPath, connecticutPath, newHampshirePath, massachusettsPath,
-					hawaiiGroup, hawaiiPathOne, hawaiiPathTwo, hawaiiPathThree, hawaiiPathFour, hawaiiPathFive, hawaiiPathSix, hawaiiPathSeven, caliPath, arizonaPath, texasPath, idahoPath, northDakotaPath, wyomingPath, coloradoPath, kansasPath, minnesotaPath, 
-					arkansasPath, louisianaPath, alabamaPath, illinoisPath, michiganGroup, michiganPathOne, michiganPathTwo, kentuckyPath, floridaPath, northCarolinaPath, indianaPath, marylandPath, 
-					newJerseyPath, newYorkPath, vermontPath, mainePath, rhodeIslandPath, alaskaGroup, alaskaPathOne, alaskaPathTwo, alaskaPathThree, alaskaPathFour, alaskaPathFive,
-					alaskaPathSix, alaskaPathSeven, alaskaPathEight, alaskaPathNine, alaskaPathTen};
+	        		virginiaGroup, westVirginiaPath, delawarePath, pennsylvaniaPath, connecticutPath, newHampshirePath, massachusettsPath,
+					hawaiiGroup, caliPath, arizonaPath, texasPath, idahoPath, northDakotaPath, wyomingPath, coloradoPath, kansasPath, minnesotaPath, 
+					arkansasPath, louisianaPath, alabamaPath, illinoisPath, michiganGroup, kentuckyPath, floridaPath, northCarolinaPath, indianaPath, marylandPath, 
+					newJerseyPath, newYorkPath, vermontPath, mainePath, rhodeIslandPath, alaskaGroup};
 	        
 	        
 	        Group svgGroup = new Group(allStates);
@@ -278,6 +282,7 @@ public class GameScreen extends Application {
   	    	  //Color states
   	    	  currState.setFill(Color.GRAY);
   	    	  registerHandler(currState, Color.GRAY, Color.BLACK);
+  	    	  
   	    	  //Register mouse click
   	    	  currState.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
   	    		 @Override 
@@ -378,6 +383,7 @@ public class GameScreen extends Application {
 	  	    	  } else if(currState.getContent().equals(alaskaSeven)) {
 	  	    		  QuizScreenController.setState("alaska");
 	  	    		  QuizScreenController.setCapital("juneau");
+	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(alaskaEight)) {
 	  	    		  QuizScreenController.setState("alaska");
 	  	    		  QuizScreenController.setCapital("juneau");
@@ -563,9 +569,12 @@ public class GameScreen extends Application {
 	  	    		  QuizScreenController.setCapital("dallas");
 	  	    		selectedState = currState;
 	  	    	  }
+	  	    		//States that have already been selected may not be selected again
+	  	    		if(isClickable(currState)) {
+	  	    			//Load quiz screen
+		  	    		loadQuiz("State Quiz");
+	  	    		}
 	  	    		
-	  	    		//Load quiz screen
-	  	    		loadQuiz("State Quiz");
   	    		 }
   	    	  });	 
  		  }
@@ -638,4 +647,12 @@ public class GameScreen extends Application {
 		selectedState.setFill(Color.RED);
 		registerHandler(selectedState, Color.RED, Color.RED);
 	}
+	
+	public static Boolean isClickable(SVGPath path) {
+		if(path.getFill().equals(Color.BLUE) || path.getFill().equals(Color.RED)) {
+			return false;
+		} else {
+			return true;
+		}
 	}
+}

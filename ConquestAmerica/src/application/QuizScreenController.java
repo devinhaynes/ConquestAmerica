@@ -9,7 +9,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class QuizScreenController implements Initializable{
@@ -59,8 +58,8 @@ public class QuizScreenController implements Initializable{
     	retreatButton.setVisible(false);
     	returnGame.setVisible(true);
     	
-    	String inputState = answerOne.getText().toLowerCase();
-    	String inputCapital = answerTwo.getText().toLowerCase();
+    	String inputState = answerOne.getText().toLowerCase().trim();
+    	String inputCapital = answerTwo.getText().toLowerCase().trim();
     	int tally = 0;
     	
     	if(inputState.equals(answerState.toLowerCase())) {
@@ -79,6 +78,8 @@ public class QuizScreenController implements Initializable{
     		resultTwo.setText("Incorrect");
     	}    	
     	
+    	//If user answers both questions correctly, change state color to blue
+    	//Otherwise, change state color to red
     	if(tally == 2) {
     		GameScreen.changeStateColorWin();
     	} else {
