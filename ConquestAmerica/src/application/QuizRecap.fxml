@@ -7,213 +7,30 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="838.0" prefWidth="953.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizRecapController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizRecapController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="125.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="125.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="225.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="0.0" prefWidth="125.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.0" minWidth="10.0" prefWidth="125.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.0" minWidth="10.0" prefWidth="125.0" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="31.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="439.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button fx:id="playAgain" mnemonicParsing="false" onAction="#gameStart" prefHeight="25.0" prefWidth="175.0" text="Play Again" GridPane.rowIndex="27" />
-      <Button fx:id="quitGame" mnemonicParsing="false" onAction="#quitGame" prefHeight="25.0" prefWidth="175.0" text="Quit" GridPane.columnIndex="6" GridPane.rowIndex="27" />
-      <Label alignment="CENTER" prefHeight="46.0" prefWidth="953.0" text="Your Conquest" GridPane.columnSpan="2147483647">
+      <Button fx:id="playAgain" mnemonicParsing="false" onAction="#gameStart" prefHeight="25.0" prefWidth="175.0" text="Play Again" GridPane.rowIndex="1" />
+      <Button fx:id="quitGame" mnemonicParsing="false" onAction="#quitGame" prefHeight="25.0" prefWidth="175.0" text="Quit" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" prefHeight="46.0" prefWidth="953.0" text="Your Conquest" underline="true" GridPane.columnSpan="2147483647">
          <font>
-            <Font name="Bank Gothic Medium BT" size="35.0" />
+            <Font name="System Italic" size="35.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Alabama" GridPane.rowIndex="2" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Alaska" GridPane.rowIndex="3" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Arizona" GridPane.rowIndex="4" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Arkansas" GridPane.rowIndex="5" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="California" GridPane.rowIndex="6" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Colorado" GridPane.rowIndex="7" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Connecticut" GridPane.rowIndex="8" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Delaware" GridPane.rowIndex="9" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Florida" GridPane.rowIndex="10" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Georgia" GridPane.rowIndex="11" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Hawaii" GridPane.rowIndex="12" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Idaho" GridPane.rowIndex="13" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Illinois" GridPane.rowIndex="14" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Indiana" GridPane.rowIndex="15" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Iowa" GridPane.rowIndex="16" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Kansas" GridPane.rowIndex="17" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Kentucky" GridPane.rowIndex="18" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Louisiana" GridPane.rowIndex="19" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Maine" GridPane.rowIndex="20" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Maryland" GridPane.rowIndex="21" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Massachusetts" GridPane.rowIndex="22" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Michigan" GridPane.rowIndex="23" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Minnesota" GridPane.rowIndex="24" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Mississippi" GridPane.rowIndex="25" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Missouri" GridPane.rowIndex="26" />
+         
       
-      <Label fx:id="AlabamaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Label fx:id="AlaskaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Label fx:id="ArizonaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Label fx:id="ArkansasQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Label fx:id="CaliforniaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-      <Label fx:id="ColoradoQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <Label fx:id="ConnecticutQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-      <Label fx:id="DelawareQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-      <Label fx:id="FloridaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-      <Label fx:id="GeorgiaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-      <Label fx:id="HawaiiQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-      <Label fx:id="IdahoQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-      <Label fx:id="IllinoisQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-      <Label fx:id="IndianaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-      <Label fx:id="IowaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-      <Label fx:id="KansasQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
-      <Label fx:id="KentuckyQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
-      <Label fx:id="LouisianaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
-      <Label fx:id="MaineQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
-      <Label fx:id="MarylandQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
-      <Label fx:id="MassQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
-      <Label fx:id="MichiganQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
-      <Label fx:id="MinnesotaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
-      <Label fx:id="MississippiQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
-      <Label fx:id="MissouriQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="26" />
-      
-      <Label fx:id="AlabamaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-      <Label fx:id="AlaskaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Label fx:id="ArizonaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-      <Label fx:id="ArkansasQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-      <Label fx:id="CaliforniaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-      <Label fx:id="ColoradoQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-      <Label fx:id="ConnecticutQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-      <Label fx:id="DelawareQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-      <Label fx:id="FloridaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-      <Label fx:id="GeorgiaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
-      <Label fx:id="HawaiiQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="12" />
-      <Label fx:id="IdahoQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
-      <Label fx:id="IllinoisQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
-      <Label fx:id="IndianaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="15" />
-      <Label fx:id="IowaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="16" />
-      <Label fx:id="KansasQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
-      <Label fx:id="KentuckyQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="18" />
-      <Label fx:id="LouisianaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="19" />
-      <Label fx:id="MaineQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="20" />
-      <Label fx:id="MarylandQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="21" />
-      <Label fx:id="MassQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="22" />
-      <Label fx:id="MichiganQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="23" />
-      <Label fx:id="MinnesotaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="24" />
-      <Label fx:id="MississippiQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="25" />
-      <Label fx:id="MissouriQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="26" />
-      
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Montana" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Nebraska" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Nevada" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="New Hampshire" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="New Jersey" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="New Mexico" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="New York" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="North Carolina" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="North Dakota" GridPane.columnIndex="4" GridPane.rowIndex="10" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Ohio" GridPane.columnIndex="4" GridPane.rowIndex="11" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Oklahoma" GridPane.columnIndex="4" GridPane.rowIndex="12" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Oregon" GridPane.columnIndex="4" GridPane.rowIndex="13" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Pennsylvania" GridPane.columnIndex="4" GridPane.rowIndex="14" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Rhode Island" GridPane.columnIndex="4" GridPane.rowIndex="15" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="South Carolina" GridPane.columnIndex="4" GridPane.rowIndex="16" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="South Dakota" GridPane.columnIndex="4" GridPane.rowIndex="17" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Tennessee" GridPane.columnIndex="4" GridPane.rowIndex="18" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Texas" GridPane.columnIndex="4" GridPane.rowIndex="19" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Utah" GridPane.columnIndex="4" GridPane.rowIndex="20" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Vermont" GridPane.columnIndex="4" GridPane.rowIndex="21" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Virginia" GridPane.columnIndex="4" GridPane.rowIndex="22" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Washington" GridPane.columnIndex="4" GridPane.rowIndex="23" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="West Virginia" GridPane.columnIndex="4" GridPane.rowIndex="24" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Wisconsin" GridPane.columnIndex="4" GridPane.rowIndex="25" />
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Wyoming" GridPane.columnIndex="4" GridPane.rowIndex="26" />
-      
-      <Label fx:id="MontanaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-      <Label fx:id="NebraskaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-      <Label fx:id="NevadaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-      <Label fx:id="NewHampshireQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-      <Label fx:id="NewJerseyQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-      <Label fx:id="NewMexicoQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-      <Label fx:id="NewYorkQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
-      <Label fx:id="NorthCarolinaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
-      <Label fx:id="NorthDakotaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="10" />
-      <Label fx:id="OhioQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="11" />
-      <Label fx:id="OklahomaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="12" />
-      <Label fx:id="OregonQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="13" />
-      <Label fx:id="PennsylvaniaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="14" />
-      <Label fx:id="RhodeIslandQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="15" />
-      <Label fx:id="SouthCarolinaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="16" />
-      <Label fx:id="SouthDakotaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="17" />
-      <Label fx:id="TennesseeQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="18" />
-      <Label fx:id="TexasQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="19" />
-      <Label fx:id="UtahQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="20" />
-      <Label fx:id="VermontQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="21" />
-      <Label fx:id="VirginiaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="22" />
-      <Label fx:id="WashingtonQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="23" />
-      <Label fx:id="WestVirginiaQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="24" />
-      <Label fx:id="WisconsinQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="25" />
-      <Label fx:id="WyomingQuestionOne" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="26" />
-      
-      <Label fx:id="MontanaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-      <Label fx:id="NebraskaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-      <Label fx:id="NevadaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-      <Label fx:id="NewHampshireQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-      <Label fx:id="NewJerseyQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-      <Label fx:id="NewMexicoQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-      <Label fx:id="NewYorkQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-      <Label fx:id="NorthCarolinaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
-      <Label fx:id="NorthDakotaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="10" />
-      <Label fx:id="OhioQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="11" />
-      <Label fx:id="OklahomaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="12" />
-      <Label fx:id="OregonQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="13" />
-      <Label fx:id="PennsylvaniaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="14" />
-      <Label fx:id="RhodeIslandQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="15" />
-      <Label fx:id="SouthCarolinaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="16" />
-      <Label fx:id="SouthDakotaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="17" />
-      <Label fx:id="TennesseeQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="18" />
-      <Label fx:id="TexasQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="19" />
-      <Label fx:id="UtahQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="20" />
-      <Label fx:id="VermontQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="21" />
-      <Label fx:id="VirginiaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="22" />
-      <Label fx:id="WashingtonQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="23" />
-      <Label fx:id="WestVirginiaQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="24" />
-      <Label fx:id="WisconsinQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="25" />
-      <Label fx:id="WyomingQuestionTwo" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.rowIndex="26" />
-      
-      <Label text="Question One" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label text="Question Two" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <Label text="Question One" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-      <Label text="Question Two" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Label fx:id="userScorelbl" alignment="CENTER" prefHeight="30.0" prefWidth="334.0" text="Final Score" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </GridPane>
