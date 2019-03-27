@@ -425,7 +425,7 @@ public class GameScreen extends Application {
 	  	    		  QuizScreenController.setCapital("salt lake city");
 	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(colorado)) {
-	  	    		  QuizScreenController.setState("colorada");
+	  	    		  QuizScreenController.setState("colorado");
 	  	    		  QuizScreenController.setCapital("denver");
 	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(wyoming)) {
