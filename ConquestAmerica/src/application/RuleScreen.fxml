@@ -24,10 +24,10 @@
   </rowConstraints>
    <children>
       <Button fx:id="closeButton" mnemonicParsing="false" onAction="#quitRules" prefHeight="36.0" prefWidth="115.0" text="Close" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-      <Label prefHeight="82.0" prefWidth="107.0" text="Step One" GridPane.rowIndex="1" />
-      <Label prefHeight="63.0" prefWidth="107.0" text="Step Two" GridPane.rowIndex="2" />
-      <Label prefHeight="63.0" prefWidth="107.0" text="Step Three" GridPane.rowIndex="3" />
-      <Label prefHeight="81.0" prefWidth="107.0" text="Step Four" GridPane.rowIndex="4" />
+      <Label prefHeight="82.0" prefWidth="107.0" text="Rule One:" GridPane.rowIndex="1" />
+      <Label prefHeight="63.0" prefWidth="107.0" text="Rule Two:" GridPane.rowIndex="2" />
+      <Label prefHeight="63.0" prefWidth="107.0" text="Rule Three:" GridPane.rowIndex="3" />
+      <Label prefHeight="81.0" prefWidth="107.0" text="Rule Four:" GridPane.rowIndex="4" />
       <Label prefHeight="66.0" prefWidth="107.0" text="Rule Five:" GridPane.rowIndex="5" />
       <Label alignment="CENTER" prefHeight="92.0" prefWidth="419.0" text="Rules of Conquest" textAlignment="CENTER" GridPane.columnIndex="1">
          <font>
@@ -35,9 +35,11 @@
          </font>
       </Label>
       <Label prefHeight="61.0" prefWidth="389.0" text="Select State to attack" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label prefHeight="59.0" prefWidth="410.0" text="Click to Attack Button in top right corner of screen" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Label prefHeight="79.0" prefWidth="414.0" text="Answer the two questions" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label prefHeight="59.0" prefWidth="410.0" text="Guess the name of the state and its capital" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label prefHeight="79.0" prefWidth="414.0" text="You must answer both questions correctly to capture the state" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label prefHeight="81.0" prefWidth="460.0" text="Click submit button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Label prefHeight="64.0" prefWidth="398.0" text="Rule Five Text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label prefHeight="64.0" prefWidth="398.0" text="The game ends when you surrender or capture all 50 states" GridPane.columnIndex="1" GridPane.rowIndex="5" />
    </children>
 </GridPane>
+
+

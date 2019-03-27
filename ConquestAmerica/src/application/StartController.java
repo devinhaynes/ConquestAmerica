@@ -27,20 +27,9 @@ public class StartController{
     @FXML
     void gameStart(ActionEvent event){
     	try {
-	    	/* Original code
-	    	 * Parent Game = FXMLLoader.load(getClass().getResource("GameScreen.fxml"));
-	    	Scene root = new Scene(Game);
-	    	Stage stage = new Stage();
-	    	stage.setTitle("Game Rough");
-	    	stage.setScene(root);
-	    	stage.show();
-	    	
-	    	Stage close = (Stage) startGame.getScene().getWindow();
-	    	close.close();
-	    	*/
-    		GameScreen test = new GameScreen();
+    		GameScreen game = new GameScreen();
         	Stage gameStage = new Stage();
-        	test.start(gameStage);
+        	game.start(gameStage);
         	gameStage.show();
         	
         	Stage close = (Stage) startGame.getScene().getWindow();
@@ -61,7 +50,7 @@ public class StartController{
 	    	
 	    	stage.initModality(Modality.WINDOW_MODAL);
 	    	stage.initOwner(owner);
-	    	stage.setTitle("Rules Rough");
+	    	stage.setTitle("Conquest Rules");
 	    	stage.setScene(root);
 	    	stage.show();
     	} catch(Exception e) {

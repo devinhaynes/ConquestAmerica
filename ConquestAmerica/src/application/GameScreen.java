@@ -568,6 +568,10 @@ public class GameScreen extends Application {
 	  	    		  QuizScreenController.setState("texas");
 	  	    		  QuizScreenController.setCapital("dallas");
 	  	    		selectedState = currState;
+	  	    	  }  else if(currState.getContent().equals(montana)) {
+	  	    		  QuizScreenController.setState("montana");
+	  	    		  QuizScreenController.setCapital("helena");
+	  	    		selectedState = currState;
 	  	    	  }
 	  	    		//States that have already been selected may not be selected again
 	  	    		if(isClickable(currState)) {
@@ -587,7 +591,7 @@ public class GameScreen extends Application {
 				    		Parent Game = FXMLLoader.load(getClass().getResource("QuizRecap.fxml"));
 					    	Scene root = new Scene(Game);
 					    	Stage stage = new Stage();
-					    	stage.setTitle("Recap Rough");
+					    	stage.setTitle("Your Conquest");
 					    	stage.setScene(root);
 					    	stage.show();
 					    	
