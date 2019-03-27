@@ -43,6 +43,18 @@ public class QuizScreenController implements Initializable{
     @FXML
     private TextArea answerTwo;
     
+    @FXML
+    private Label correctStateText;
+    
+    @FXML
+    private Label correctCapitalText;
+    
+    @FXML
+    private Label correctState;
+    
+    @FXML
+    private Label correctCapital;
+    
     static String answerState;
     static String answerCapital;
     
@@ -68,6 +80,9 @@ public class QuizScreenController implements Initializable{
     		GameScreen.scoreIncrement();
     	} else {
     		resultOne.setText("Incorrect");
+    		correctStateText.setVisible(true);
+    		correctState.setVisible(true);
+    		correctState.setText(answerState);
     	}
     	
     	if (inputCapital.equals(answerCapital.toLowerCase())) {
@@ -76,6 +91,9 @@ public class QuizScreenController implements Initializable{
     		tally++;
     	} else {
     		resultTwo.setText("Incorrect");
+    		correctCapitalText.setVisible(true);
+    		correctCapital.setVisible(true);
+    		correctCapital.setText(answerCapital);
     	}    	
     	
     	//If user answers both questions correctly, change state color to blue
