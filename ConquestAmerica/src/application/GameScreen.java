@@ -290,7 +290,7 @@ public class GameScreen extends Application {
   	    			 //Set quiz data
 	  	    		if(currState.getContent().equals(washington)) {
 	  	    		  QuizScreenController.setState("washington");
-	  	    		  QuizScreenController.setCapital("seattle");
+	  	    		  QuizScreenController.setCapital("olympia");
 	  	    		  selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(california)) {
 	  	    		  QuizScreenController.setState("california");
@@ -298,7 +298,7 @@ public class GameScreen extends Application {
 	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(oregon)) {
 	  	    		  QuizScreenController.setState("oregon");
-	  	    		  QuizScreenController.setCapital("portland");
+	  	    		  QuizScreenController.setCapital("salem");
 	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(arizona)) {
 	  	    		  QuizScreenController.setState("arizona");
@@ -454,7 +454,7 @@ public class GameScreen extends Application {
 	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(southDakota)) {
 	  	    		  QuizScreenController.setState("south dakota");
-	  	    		  QuizScreenController.setCapital("st. pierre");
+	  	    		  QuizScreenController.setCapital("pierre");
 	  	    		selectedState = currState;
 	  	    	  } else if(currState.getContent().equals(maine)) {
 	  	    		  QuizScreenController.setState("maine");
@@ -534,7 +534,7 @@ public class GameScreen extends Application {
 	  	    		selectedState = currState;
 	  	    	  }   else if(currState.getContent().equals(missouri)) {
 	  	    		  QuizScreenController.setState("missouri");
-	  	    		  QuizScreenController.setCapital("st. louis");
+	  	    		  QuizScreenController.setCapital("jefferson city");
 	  	    		selectedState = currState;
 	  	    	  }   else if(currState.getContent().equals(kentucky)) {
 	  	    		  QuizScreenController.setState("kentucky");
@@ -546,7 +546,7 @@ public class GameScreen extends Application {
 	  	    		selectedState = currState;
 	  	    	  }   else if(currState.getContent().equals(illinois)) {
 	  	    		  QuizScreenController.setState("illinois");
-	  	    		  QuizScreenController.setCapital("chicago");
+	  	    		  QuizScreenController.setCapital("springfield");
 	  	    		selectedState = currState;
 	  	    	  }   else if(currState.getContent().equals(iowa)) {
 	  	    		  QuizScreenController.setState("iowa");
@@ -562,11 +562,11 @@ public class GameScreen extends Application {
 	  	    		selectedState = currState;
 	  	    	  }   else if(currState.getContent().equals(wisconsin)) {
 	  	    		  QuizScreenController.setState("wisconsin");
-	  	    		  QuizScreenController.setCapital("green bay");
+	  	    		  QuizScreenController.setCapital("madison");
 	  	    		selectedState = currState;
 	  	    	  }	  else if(currState.getContent().equals(texas)) {
 	  	    		  QuizScreenController.setState("texas");
-	  	    		  QuizScreenController.setCapital("dallas");
+	  	    		  QuizScreenController.setCapital("austin");
 	  	    		selectedState = currState;
 	  	    	  }  else if(currState.getContent().equals(montana)) {
 	  	    		  QuizScreenController.setState("montana");
